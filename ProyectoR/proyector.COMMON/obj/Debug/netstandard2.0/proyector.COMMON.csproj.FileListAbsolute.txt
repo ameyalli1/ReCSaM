@@ -1,0 +1,9 @@
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\bin\Debug\netstandard2.0\proyector.COMMON.deps.json
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\bin\Debug\netstandard2.0\proyector.COMMON.dll
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\obj\Debug\netstandard2.0\proyector.COMMON.csprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\obj\Debug\netstandard2.0\proyector.COMMON.csproj.CoreCompileInputs.cache
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\obj\Debug\netstandard2.0\proyector.COMMON.AssemblyInfoInputs.cache
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\obj\Debug\netstandard2.0\proyector.COMMON.AssemblyInfo.cs
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\bin\Debug\netstandard2.0\proyector.COMMON.pdb
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\obj\Debug\netstandard2.0\proyector.COMMON.dll
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyector.COMMON\obj\Debug\netstandard2.0\proyector.COMMON.pdb

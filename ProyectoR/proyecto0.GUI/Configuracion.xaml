@@ -1,0 +1,378 @@
+﻿<Window x:Class="proyecto0.GUI.Configuracion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:proyecto0.GUI"
+        mc:Ignorable="d"
+      Title="Configuración" Height="350" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="Imagen/diseño-floral-retro-del-fondo-de-la-invitación-del-vintage-del-día-de-fiesta-de-la-turquesa-67426517.jpg"/>
+    </Window.Background>
+    <TabControl>
+        <TabItem Header="Nueva Empresa" Width="100" FontWeight="Bold">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Imagen/diseño-floral-retro-del-fondo-de-la-invitación-del-vintage-del-día-de-fiesta-de-la-turquesa-67426517.jpg"/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="15">
+                    <Label>Nombre de la Empresa</Label>
+                    <TextBox x:Name="txtNombreEmpresa" Width="220"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="8" Grid.Row="1" Orientation="Horizontal">
+                    <Button Margin="2" Width="90" Height="30" x:Name="btnNuevoEmpresa" Click="btnNuevoEmpresa_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Nuevo</Label>
+                            <Image Width="16" Source="/Imagen/add.png"  ></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnGuardarEmpresa" Click="btnGuardarEmpresa_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Guardar</Label>
+                            <Image Width="16" Source="/Imagen/page_save.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnEditarEmpresa" Click="btnEditarEmpresa_Click"  >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Editar</Label>
+                            <Image Width="16" Source="/Imagen/pencil.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnEliminarEmpresa" Click="btnEliminarEmpresa_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Eliminar</Label>
+                            <Image Width="16" Source="/Imagen/table_row_delete.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnCancelarEmpresa" Click="btnCancelarEmpresa_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Cancelar</Label>
+                            <Image Width="16" Source="/Imagen/cancel.png"></Image>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <ListView Grid.Row="2" x:Name="ListEmpresa"  Margin="10"></ListView>
+
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Usuarios" Width="100" FontWeight="Bold">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Imagen/diseño-floral-retro-del-fondo-de-la-invitación-del-vintage-del-día-de-fiesta-de-la-turquesa-67426517.jpg"/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <WrapPanel Grid.Row="0" Orientation="Horizontal">
+                    <WrapPanel.Background>
+                        <ImageBrush ImageSource="Imagen/diseño-floral-retro-del-fondo-de-la-invitación-del-vintage-del-día-de-fiesta-de-la-turquesa-67426517.jpg"/>
+                    </WrapPanel.Background>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="90">Nombre</Label>
+                        <TextBox x:Name="txtNombreUsuarios" Width="180" Margin="2"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="90">Apellidos</Label>
+                        <TextBox x:Name="txtApellidoUsuarios" Width="180" Margin="2"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="90">Correo</Label>
+                        <TextBox x:Name="txtCorreoUsuarios" Width="180" Margin="2"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="90">Empresa</Label>
+                        <ComboBox x:Name="cmbEmpresaUsuarios" Width="180" Margin="2"></ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="90">Horario</Label>
+                        <TextBox x:Name="txtHorarioUsuarios" Width="180" Margin="2"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="90">Turno</Label>
+                        <TextBox x:Name="txtTurnoUsuarios" Width="180" Margin="2"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="90">Password</Label>
+                        <PasswordBox x:Name="txtPasswordsuarios" Width="180" Margin="2"></PasswordBox>
+                    </StackPanel>
+                </WrapPanel>
+                <WrapPanel Grid.Row="1" Orientation="Horizontal">
+                    <WrapPanel.Background>
+                        <ImageBrush ImageSource="Imagen/diseño-floral-retro-del-fondo-de-la-invitación-del-vintage-del-día-de-fiesta-de-la-turquesa-67426517.jpg"/>
+                    </WrapPanel.Background>
+                    <Button Margin="2" Width="90" x:Name="btnNuevoUsuario" Click="btnNuevoUsuario_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Nuevo</Label>
+                            <Image Width="16" Source="/Imagen/add.png"  ></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnGuardarUsuario" Click="btnGuardarUsuario_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Guardar</Label>
+                            <Image Width="16" Source="/Imagen/page_save.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnEditarUsuario" Click="btnEditarUsuario_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Editar</Label>
+                            <Image Width="16" Source="/Imagen/pencil.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnEliminarUsuario" Click="btnEliminarUsuario_Click" >
+                        <StackPanel Orientation="Horizontal" >
+                            <Label>Eliminar</Label>
+                            <Image Width="16" Source="/Imagen/table_row_delete.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnCancelarUsuario" Click="btnCancelarUsuario_Click" >
+                        <StackPanel  Orientation="Horizontal">
+                            <Label>Cancelar</Label>
+                            <Image Width="16" Source="/Imagen/cancel.png"></Image>
+                        </StackPanel>
+                    </Button>
+                </WrapPanel>
+                <ListView Grid.Row="2" x:Name="ListUsuarioMeseros" Margin="10" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="{Binding Nombres}" Grid.Column="0" Grid.Row="0" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding Apellidos}" Grid.Column="1" Grid.Row="0" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding Correo}" Grid.Column="2" Grid.Row="0" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding Empresa}" Grid.Column="3" Grid.Row="0" Margin="2"></TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Encuesta" Width="100" FontWeight="Bold">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Imagen/diseño-floral-retro-del-fondo-de-la-invitación-del-vintage-del-día-de-fiesta-de-la-turquesa-67426517.jpg"/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <ListView x:Name="listEncuesta" Grid.Row="0" Margin="5">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="{Binding Nombre}" Grid.Column="0" Grid.Row="0" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding Duenio}" Grid.Column="1" Grid.Row="0" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding Objetivo}" Grid.Column="2" Grid.Row="0" Margin="2"></TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <WrapPanel Orientation="Horizontal" Grid.Row="1">
+                    <WrapPanel Orientation="Horizontal" >
+
+                        <StackPanel  Orientation="Horizontal">
+                            <Label Width="90">Nombre:</Label>
+                            <ComboBox x:Name="CmbNombreEncuesta" Width="220" Margin="2"></ComboBox>
+                        </StackPanel>
+                        <StackPanel  Orientation="Horizontal">
+                            <Label Width="90">Dueño:</Label>
+                            <TextBox x:Name="txtDuenoEncuesta" Width="220" Margin="2"></TextBox>
+                        </StackPanel>
+                        <StackPanel  Orientation="Horizontal">
+                            <Label Width="90">Objetivo:</Label>
+                            <TextBox x:Name="txtObjetivoEncuesta" Width="220" Height="80" Margin="2"></TextBox>
+                        </StackPanel>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Vertical" >
+                        <Button Margin="2" Width="90" x:Name="btnGuardarEncuesta" Click="btnGuardarEncuesta_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Label>Guardar</Label>
+                                <Image Width="16" Source="/Imagen/page_save.png"></Image>
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="2" Width="90" x:Name="btnEditarEncuesta" Click="btnEditarEncuesta_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Label>Editar</Label>
+                                <Image Width="16" Source="/Imagen/pencil.png"></Image>
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="2" Width="90" x:Name="btnEliminarEncuesta" Click="btnEliminarEncuesta_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Label>Eliminar</Label>
+                                <Image Width="16" Source="/Imagen/table_row_delete.png"></Image>
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="2" Width="90" x:Name="btnCancelarEncuesta" Click="btnCancelarEncuesta_Click">
+                            <StackPanel Orientation="Horizontal">
+                                <Label>Cancelar</Label>
+                                <Image Width="16" Source="/Imagen/cancel.png"></Image>
+                            </StackPanel>
+                        </Button>
+                    </WrapPanel>
+                </WrapPanel>
+
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Preguntas" Width="100" FontWeight="Bold">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Imagen/diseño-floral-retro-del-fondo-de-la-invitación-del-vintage-del-día-de-fiesta-de-la-turquesa-67426517.jpg"/>
+                </Grid.Background>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="365*"/>
+                    <ColumnDefinition Width="142*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <WrapPanel Orientation="Horizontal"  Grid.Row="0" Grid.Column="0" >
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="155" Height="30">Formulación de la pregunta</Label>
+                        <TextBox x:Name="txtPregunta" Width="200" Height="40" Margin="2"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="155">Respuestas</Label>
+                        <TextBox x:Name="txtRespuesta" Width="170" Margin="2"></TextBox>
+                        <Button ToolTip="Agregar" Width="25" Height="20" x:Name="btnAgregarRespuestas" Click="btnAgregarRespuestas_Click"></Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="155">Valor mínimo</Label>
+                        <TextBox x:Name="txtValorMinimo" Width="200" Margin="2"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="155">Valor máximo</Label>
+                        <TextBox x:Name="txtValorMaximo" Width="200" Margin="2"></TextBox>
+                    </StackPanel>
+                </WrapPanel>
+                <WrapPanel Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,0,0,34">
+                    <Button Margin="2" Width="90" x:Name="btnNuevoPreguntas" Click="btnNuevoPreguntas_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Nuevo</Label>
+                            <Image Width="16" Source="/Imagen/add.png"  ></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnGuardarPreguntas" Click="btnGuardarPreguntas_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Guardar</Label>
+                            <Image Width="16" Source="/Imagen/page_save.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnEditarPreguntas" Click="btnEditarPreguntas_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Editar</Label>
+                            <Image Width="16" Source="/Imagen/pencil.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnEliminarPreguntas" Click="btnEliminarPreguntas_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Eliminar</Label>
+                            <Image Width="16" Source="/Imagen/table_row_delete.png"></Image>
+                        </StackPanel>
+                    </Button>
+                    <Button Margin="2" Width="90" x:Name="btnCancelarPrguntas" Click="btnCancelarPrguntas_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label>Cancelar</Label>
+                            <Image Width="16" Source="/Imagen/cancel.png"></Image>
+                        </StackPanel>
+                    </Button>
+                </WrapPanel>
+                <ListView Grid.Row="1"  x:Name="ListPreguntas" Grid.ColumnSpan="2" Margin="0,34,0,0" Grid.RowSpan="2" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="{Binding Texto}" Grid.Column="0" Grid.Row="0" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding Respuestas}" Grid.Column="1" Grid.Row="0" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding ValorMinimo}" Grid.Column="2" Grid.Row="0" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding ValorMaximo}" Grid.Column="3" Grid.Row="0" Margin="2"></TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <DataGrid Grid.Row="0" Grid.Column="1" Margin="5" x:Name="dtgRespuestas" IsReadOnly="True" MouseDoubleClick="dtgRespuestas_MouseDoubleClick" ></DataGrid>
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Respuestas" Width="100" FontWeight="Bold">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="165*"/>
+                    <ColumnDefinition Width="421*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.Background>
+                    <ImageBrush ImageSource="Imagen/diseño-floral-retro-del-fondo-de-la-invitación-del-vintage-del-día-de-fiesta-de-la-turquesa-67426517.jpg"/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="54*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <DataGrid Grid.Row="0" Grid.Column="0" x:Name="dtgRespuestasForm" IsReadOnly="True" Margin="10,10,10,50" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                    <DataGrid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.421"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </DataGrid.RenderTransform>
+                </DataGrid>
+                <WrapPanel Grid.Row="1"  HorizontalAlignment="Center" Grid.Column="1" Margin="70,40,115,0" Width="236" >
+                    <Button Width="100" Margin="5" x:Name="btnEliminarUnElementoRespuestas" Click="btnEliminarUnElementoRespuestas_Click" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Eliminar"/>
+                            <Image Width="16" Source="/Imagen/table_row_delete.png"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Width="106" Margin="5" x:Name="btnEliminarTodoRespuestas" Click="btnEliminarTodoRespuestas_Click" >
+                        <StackPanel Orientation="Horizontal" >
+                            <Label Content="Eliminar Todo"/>
+                            <Image Width="16" Source="/Imagen/cancel.png"></Image>
+                        </StackPanel>
+                    </Button>
+                </WrapPanel>
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Regresar" x:Name="tabRegresarAMenu" MouseLeftButtonUp="tabRegresarAMenu_MouseLeftButtonUp" FontWeight="Bold" ></TabItem>
+    </TabControl>
+</Window>
+

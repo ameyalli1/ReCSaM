@@ -1,0 +1,12 @@
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\bin\Debug\netstandard2.0\proyecto.DAL.deps.json
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\bin\Debug\netstandard2.0\proyecto.DAL.dll
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\obj\Debug\netstandard2.0\proyecto.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\obj\Debug\netstandard2.0\proyecto.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\obj\Debug\netstandard2.0\proyecto.DAL.AssemblyInfoInputs.cache
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\obj\Debug\netstandard2.0\proyecto.DAL.AssemblyInfo.cs
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\bin\Debug\netstandard2.0\proyecto.DAL.pdb
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\bin\Debug\netstandard2.0\proyector.COMMON.dll
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\bin\Debug\netstandard2.0\proyector.COMMON.pdb
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\obj\Debug\netstandard2.0\proyecto.DAL.csproj.CopyComplete
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\obj\Debug\netstandard2.0\proyecto.DAL.dll
+C:\Users\Daniela\Documents\ITESHU\SEMESTRE 2\TRAB_PROGRAMACION\U6\ProyectoR\proyecto.DAL\obj\Debug\netstandard2.0\proyecto.DAL.pdb
